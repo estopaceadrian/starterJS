@@ -107,7 +107,7 @@ if (x != y && x != z) {
 } else {
   console.log('isosceles');
 }
-*/
+
 
 var x = prompt('Enter the 1st number.');
 var y = prompt('Enter the 2nd number.');
@@ -118,3 +118,42 @@ if (z > x && z < y) {
 } else {
   console.log('false');
 }
+
+
+// var x = parseInt(prompt('Enter the 1st number:'));
+// var y = parseInt(prompt('Enter the 2st number:'));
+// var operator = prompt('Enter the operator:');
+
+if (operator == 'add') {
+  console.log('the sum of 1st and 2nd is ' + (x + y));
+} else if (operator == 'subtract') {
+  console.log('the difference of 1st and 2nd is ' + (x - y));
+} else if (operator == 'multiply') {
+  console.log('the product of 1st and 2nd is ' + x * y);
+} else if (operator == 'divide') {
+  console.log('the quotient of 1st and 2nd is ' + x / y);
+} else if (operator == 'modulo') {
+  console.log('the remainder of 1st and 2nd is ' + (x % y));
+} else {
+  alert('enter either add, subtract, multiply, divide or modulo');
+}
+
+
+var row = parseInt(prompt('Enter number of pyramid row: '));
+var string = '';
+var count = 0;
+while (count != row) {
+  string += 'x';
+  console.log(string);
+  count++;
+}
+
+var x = parseInt(prompt('Enter the a number: '));
+var ast = ' ';
+while(x!=0){
+     ast = ast+"*"
+    console.log(ast);
+    x--;
+}
+
+*/
