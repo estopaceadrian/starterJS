@@ -156,4 +156,95 @@ while(x!=0){
     x--;
 }
 
+var x = '';
+var count = 0;
+while(count !== 3){
+    x = prompt('write down the food:');
+    confirm('are you sure?');
+    count++;
+}
+alert('you are craving for' +x);
+
+var row = 4
+var x = '';
+var count = 0;
+while(count !== row){
+    x += '*';
+    console.log(x);
+    count++;
+}
+
+var limit = parseInt(prompt('Enter number:'));
+var counter = 0;
+while(counter <= limit){
+	if (counter%2 === 0){
+		console.log('EVEN:',counter)
+		counter++;
+		counter++;
+	}
+}
+
+var x= 30;
+var counter = 0;
+
+while(counter<=x){
+    if((x%3===0)&&(x%5===0)){
+        console.log(counter+'fizzBuzz');
+  
+    }else if (x%5===0){
+        console.log('fiz');
+ 
+    }else if(x%3===0){
+        console.log('fiz');
+     
+    }
+    
+}
+
+var limit = 30;
+for(counter = 2; counter <= limit; counter++){
+	if ((!(counter%3)) && (!(counter%5))){
+		console.log(counter + '-' + 'fizzbuzz')
+		} else if (!(counter%3)){
+		console.log(counter + '-' + 'buzz')
+		} else if (!(counter%5)){
+		console.log(counter + '-' + 'fizz')
+	}
+}
+
+
+
+//WHILE
+
+var x = '';
+var count = 0;
+while(count !== 3){
+    x = prompt('write down the food:');
+    confirm('are you sure?');
+    count++;
+}
+
+//DO WHILE
+var limit = parseInt(prompt('Enter number: '));
+var counter = 9;
+do {
+	console.log(counter);
+	counter++;
+} while (limit != counter)
+
+// FOR
+var limit = parseInt(prompt('Enter # of sequence:'));
+var char = ""
+for (let i = 0; i<limit;i++){
+  char += "*"
+  console.log(char + "");
+}
+
+
+var input = parseInt(prompt('Enter a number:'));
+for(i=0; i<=input; i++){
+    if(!(i%2)){
+        console.log(i);
+    }
+}
 */
